@@ -1,0 +1,253 @@
+body,
+nav,
+ul,
+div,
+h1,
+h2,
+h3,
+header,
+li,
+a{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    
+}
+
+nav ul {
+    padding: 20px;
+    background-color: #000;
+}
+
+nav li {
+    list-style: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+.icono-del-menu {
+    color: #fff;
+    background: #111;
+    text-align: right;
+    padding: 20px;
+    font-size: 24px;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+}
+
+#menu {
+    transition: margin-top 1s;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    margin-top: -80%;
+}
+
+header {
+    height: 100vh;
+}
+
+.dalto-banner {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    background: url("Transgender_Pride_flag.svg.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding-top: 44px;
+}
+
+.dalto-banner__info {
+    flex-grow: 1;
+    display: flex;
+}
+
+.dalto-banner__info-conteiner {
+    margin: auto;
+}
+
+.dalto-banner h1 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.dalto-banner h2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dalto-banner img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 10px #000);
+}
+
+.dalto-banner{
+    margin: auto;
+    padding: 40px;
+    font-size: 60px;
+    transform: color 0.12s;
+}
+
+#galeria {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-image: url("Transgender_Pride_flag.svg.png");
+    background-size: cover;
+    padding: 30px 0px;
+}
+
+.dibujos {
+    padding: 30px;
+    padding-bottom: 10px;
+}
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: none;
+}
+
+.modal {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-options {
+    max-height: 50px;
+    padding: 10px;
+    text-align: right;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    width: 750px;
+    color: #a22;
+}
+
+.modal-content {
+    width: 700px;
+}
+
+.open-modal {
+    background-color: transparent;
+    color: #fff;
+    padding: 9px 18px;
+    margin: 50px;
+    border: none;
+}
+
+#foto {
+    height: 400px;
+    max-width: 100%;
+    background-color: #000;
+    margin: auto;
+}
+
+.foto-container {
+    display: flex;
+    background: #000;
+    position: relative;
+}
+
+.selector-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, #000, #0000);
+    height: 70px;
+    text-align: right;
+}
+
+.img-selector {
+    padding: 6px 10px;
+    border: 3px solid #fff;
+    display: inline-block;
+    margin-left: auto;
+    position: relative;
+    top: 36px;
+    margin-right: 20px;
+}
+
+.active {
+    background: #fff;
+}
+
+@keyframes aparecer {
+    0% {
+        margin-top: 200px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 300px;
+        opacity: 1;
+    }
+}
+
+@keyframes desaparecer {
+    0% {
+        margin-top: 300px;
+        opacity: 1;
+    }
+    100% {
+        margin-top: 200px;
+        opacity: 0;
+    }
+}
+
+.derechos {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+
+/* RESPOSIVE TO WEB */
+
+@media screen and (min-width:1280px) {
+    .icono-del-menu {
+        display: none;
+    }
+    #menu {
+        position: absolute;
+        margin-top: 0;
+        padding: 0;
+        transition: margin-top 0s;
+        padding: 10px;
+        box-shadow: none;
+        background: transparent;
+        text-align: center;
+    }
+    #menu li {
+        display: inline-block;
+        margin-right: 30px;
+
+    }
+    .dalto-banner h1 {
+        font-size: 48px;
+    }
+    .dalto-banner h2 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .dalto-banner img {
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        filter: drop-shadow(1px 1px 15px #000);
+        margin-top: 20px;
+    }
+
+}
