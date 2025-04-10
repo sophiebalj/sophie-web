@@ -97,24 +97,11 @@ header {
     font-size: 60px;
     transform: color 0.12s;
 }
-
-#galeria {
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
+.modal-container {
     background-image: url("Transgender_Pride_flag.svg.png");
     background-size: cover;
-    padding: 30px 0px;
-}
-
-.dibujos {
-    padding: 30px;
-    padding-bottom: 10px;
-}
-.modal-container {
     width: 100vw;
     height: 100vh;
-    position: absolute;
     display: none;
 }
 
@@ -124,24 +111,23 @@ header {
     flex-direction: column;
 }
 
-.top-options {
-    max-height: 50px;
-    padding: 10px;
-    text-align: right;
+.close-m {
+    margin-right: 40px;
+    border:3px solid #000;
     font-family: sans-serif;
-    font-weight: 700;
     font-size: 30px;
-    position: absolute;
-    width: 750px;
     color: #a22;
 }
 
 .modal-content {
-    width: 700px;
+    width: 100vw;
+    height: 100vh;
+    text-align: right;
+    
+    
 }
 
 .open-modal {
-    background-color: transparent;
     color: #fff;
     padding: 9px 18px;
     margin: 50px;
@@ -149,15 +135,14 @@ header {
 }
 
 #foto {
-    height: 400px;
-    max-width: 100%;
-    background-color: #000;
+    height: 80vh;
+    max-width:  100%;
     margin: auto;
+    border: 3px solid #000;
 }
 
 .foto-container {
     display: flex;
-    background: #000;
     position: relative;
 }
 
@@ -165,14 +150,13 @@ header {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(to top, #000, #0000);
     height: 70px;
     text-align: right;
 }
 
 .img-selector {
     padding: 6px 10px;
-    border: 3px solid #fff;
+    border: 3px solid #000;
     display: inline-block;
     margin-left: auto;
     position: relative;
@@ -190,18 +174,18 @@ header {
         opacity: 0;
     }
     100% {
-        margin-top: 300px;
+        margin-top: 0px;
         opacity: 1;
     }
 }
 
 @keyframes desaparecer {
     0% {
-        margin-top: 300px;
+        margin-top: 0px;
         opacity: 1;
     }
     100% {
-        margin-top: 200px;
+        margin-top: 300px;
         opacity: 0;
     }
 }
