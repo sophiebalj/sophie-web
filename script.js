@@ -12,7 +12,7 @@ buttonMenu.addEventListener("click", () => {
 const baner = document.querySelector(".dalto-banner");
 const modalC = document.querySelector(".modal-container");
 const modal = document.querySelector(".modal");
-const fotos = ["img-galeria/1.jpg", "img-galeria/2.jpg", "img-galeria/3.jpg","img-galeria/4.jpg","img-galeria/5.jpg","img-galeria/6.jpg","img-galeria/7.jpg"]
+const fotos = ["1.jpg", "2.jpg", "3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"]
 
 const createIMGSelector = img => {
     const selector = document.createElement("DIV");
