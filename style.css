@@ -37,7 +37,7 @@ nav li {
     padding: 20px;
     font-size: 24px;
     position: fixed;
-    z-index: 100;
+    z-index: 10;
     width: 100vw;
 }
 
@@ -45,12 +45,15 @@ nav li {
     transition: margin-top 1s;
     position: fixed;
     z-index: 10;
-    width: 100%;
+    width: 100vw;
     margin-top: -80%;
 }
 
 header {
     height: 100vh;
+    background: url("Transgender_Pride_flag.svg.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .dalto-banner {
@@ -58,9 +61,6 @@ header {
     height: 100vh;
     text-align: center;
     flex-direction: column;
-    background: url("Transgender_Pride_flag.svg.png");
-    background-size: cover;
-    background-position: center;
     color: #fff;
     padding-top: 44px;
 }
@@ -90,55 +90,39 @@ header {
     border-radius: 50%;
     filter: drop-shadow(1px 1px 10px #000);
 }
-
-.dalto-banner{
-    margin: auto;
-    padding: 40px;
-    font-size: 60px;
-    transform: color 0.12s;
-}
 .modal-container {
-    background-image: url("Transgender_Pride_flag.svg.png");
-    background-size: cover;
+    position: absolute;
     width: 100vw;
     height: 100vh;
+    padding-top: 44px;
     display: none;
+    background: #0009;
+    border: 4px solid #000;
 }
 
 .modal {
     margin: auto;
     display: flex;
     flex-direction: column;
+    
+    
 }
 
-.close-m {
-    margin-right: 40px;
-    border:3px solid #000;
-    font-family: sans-serif;
-    font-size: 30px;
-    color: #a22;
-}
-
-.modal-content {
-    width: 100vw;
-    height: 100vh;
+.top-options{
+    max-height: 50px;
     text-align: right;
-    
-    
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    color: #f60808;
+    width: 85%;
 }
-
-.open-modal {
-    color: #fff;
-    padding: 9px 18px;
-    margin: 50px;
-    border: none;
-}
-
 #foto {
-    height: 80vh;
+    height: 400px;
     max-width:  100%;
     margin: auto;
-    border: 3px solid #000;
+    object-fit: contain;
 }
 
 .foto-container {
@@ -151,7 +135,7 @@ header {
     bottom: 0;
     width: 100%;
     height: 70px;
-    text-align: right;
+    text-align: center;
 }
 
 .img-selector {
@@ -160,34 +144,24 @@ header {
     display: inline-block;
     margin-left: auto;
     position: relative;
-    top: 36px;
+    top: 40px;
     margin-right: 20px;
+}
+.content-libro{
+    background-color: #0009;
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+    display: flex;
+}
+iframe{
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
 }
 
 .active {
     background: #fff;
-}
-
-@keyframes aparecer {
-    0% {
-        margin-top: 200px;
-        opacity: 0;
-    }
-    100% {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
-
-@keyframes desaparecer {
-    0% {
-        margin-top: 0px;
-        opacity: 1;
-    }
-    100% {
-        margin-top: 300px;
-        opacity: 0;
-    }
 }
 
 .derechos {
