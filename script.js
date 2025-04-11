@@ -9,9 +9,10 @@ buttonMenu.addEventListener("click", () => {
         menuAbierto = false;
     }
 })
+const baner = document.querySelector(".dalto-banner");
 const modalC = document.querySelector(".modal-container");
 const modal = document.querySelector(".modal");
-const fotos = ["1.jpg", "2.jpg", "3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"]
+const fotos = ["img-galeria/1.jpg", "img-galeria/2.jpg", "img-galeria/3.jpg","img-galeria/4.jpg","img-galeria/5.jpg","img-galeria/6.jpg","img-galeria/7.jpg"]
 
 const createIMGSelector = img => {
     const selector = document.createElement("DIV");
@@ -37,12 +38,24 @@ const inicializarSelectores = () => {
 inicializarSelectores();
 document.querySelector(".open-modal").addEventListener("click", () => {
     modalC.style.display = "flex";
+    baner.style.display = "none"
     modal.style.animation = "aparecer 1s forwards";
 });
 document.querySelector(".close-m").addEventListener("click", () => {
     modal.style.animation = "desaparecer 0.3s forwards";
     setTimeout(() => {
         modalC.style.display = "none";
-    }, 300)
+        baner.style.display = "flex";
+    })
 });
+const libro = ["Relatos_y_reflexiones"]
 document.querySelectorAll(".img-selector")[0].classList.add("active")
+/* $(document).ready(function(){
+    $('#linkView').click(function(){
+        var iframe = document.createElement("iframe");
+        iframe.width = '100%';
+        iframe.height = '700px';
+        iframe.src = '"C:\Users\Usuario\Desktop\web_personal\Relatos_y_reflexiones.pdf"'; //Aqui iría el src de tu archivo .PDF
+        $('.showPDF').append(iframe);
+    });
+ }); */
